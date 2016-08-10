@@ -1,0 +1,3 @@
+First of all, this is not a good way to order the shapes because the area of the line segment is always zero. This means that any time a line segment is created, regardless of its size, it will always be put at the front of this sorted array of shapes. Second, it seems natural that all shapes should be sorted in order of their respective types, so we are not comparing apples and oranges. It is hard to differentiate a circle with area 100 and a square with area 100, and especially a triangle with area 100.
+
+

@@ -1,0 +1,274 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fmodern\fcharset0 Courier;\f2\fmodern\fcharset0 Courier-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa321
+
+\f0\b\fs48 \cf0 \expnd0\expndtw0\kerning0
+Nand2Tetris Setup Guide for Apple OS X\
+\pard\pardeftab720\sa240
+
+\b0\fs24 \cf0 \expnd0\expndtw0\kerning0
+This guide describes how to install and run the Nand2Tetris software suite on Apple OS X.\
+\pard\pardeftab720\sa298
+
+\b\fs36 \cf0 \expnd0\expndtw0\kerning0
+Install Java\
+\pard\pardeftab720\sa240
+
+\b0\fs24 \cf0 \expnd0\expndtw0\kerning0
+Older versions of Apple OS X come with Java pre-installed, so there may be no need to install Java on your Mac. Furthermore, there is no need to modify your Java CLASSPATH.\
+To find out if Java is already installed on your Mac, start the Terminal application (Applications - Utilities - Terminal). Once the terminal window appears, type the following:\
+Depending on what happens next, you may or may not need to install Java.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+If you see an output on the console such as 
+\f1 \expnd0\expndtw0\kerning0
+java version "1.8.0_31"
+\f0 \expnd0\expndtw0\kerning0
+, then Java is already installed. You can proceed to install the Nand2Tetris software suite.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+If a window appears, stating 
+\i \expnd0\expndtw0\kerning0
+To use the "java" command-line tool you need to install a JDK
+\i0 \expnd0\expndtw0\kerning0
+, then click the 
+\i \expnd0\expndtw0\kerning0
+More Info...
+\i0 \expnd0\expndtw0\kerning0
+ button. A web page will open, and you should follow the instructions to {\field{\*\fldinst{HYPERLINK "http://www.oracle.com/technetwork/java/javase/downloads/index.html"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 download and install Java}}.\
+\pard\pardeftab720\sa240
+\cf0 \expnd0\expndtw0\kerning0
+After installing Java, verify the installation by starting a new Terminal window and typing 
+\f1 \expnd0\expndtw0\kerning0
+java -version
+\f0 \expnd0\expndtw0\kerning0
+. You should see something like 
+\f1 \expnd0\expndtw0\kerning0
+java version "1.8.0_31"
+\f0 \expnd0\expndtw0\kerning0
+.\
+\pard\pardeftab720\sa298
+
+\b\fs36 \cf0 \expnd0\expndtw0\kerning0
+Install the Nand2Tetris Software Suite\
+\pard\pardeftab720\sa240
+
+\b0\fs24 \cf0 \expnd0\expndtw0\kerning0
+Double-click the .zip file you've downloaded from the {\field{\*\fldinst{HYPERLINK "http://nand2tetris.org/software.php"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 Nand2Tetris Software page}}. OS X will automatically extract the contents of the .zip file to a folder. Move this folder to your desktop.\
+To run any one of the Nand2Tetris tools on OS X, you must use the command line. Start the Terminal application (Applications - Utilities - Terminal). Once the terminal window appears, type the following:\
+\pard\pardeftab720\sa240
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+~/Desktop/nand2tetris/tools/HardwareSimulator.sh
+\f0 \expnd0\expndtw0\kerning0
+\
+(The first character, called a "tilde," is located to the left of the number 
+\f1 \expnd0\expndtw0\kerning0
+1
+\f0 \expnd0\expndtw0\kerning0
+ key on most keyboards.) At this point, the supplied 
+\i \expnd0\expndtw0\kerning0
+Hardware Simulator
+\i0 \expnd0\expndtw0\kerning0
+ should started running in a new window.\
+From now on, when you wish to run the supplied 
+\i \expnd0\expndtw0\kerning0
+Hardware Simulator
+\i0 \expnd0\expndtw0\kerning0
+, simply execute the command shown above.\
+All the supplied 
+\i \expnd0\expndtw0\kerning0
+Nand2Tetris
+\i0 \expnd0\expndtw0\kerning0
+ software tools are started in a similar way: just replace 
+\f1 \expnd0\expndtw0\kerning0
+HardwareSimulator
+\f0 \expnd0\expndtw0\kerning0
+ with the name of the software tool you wish to run.\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1960\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2900\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+Tool\cell 
+\pard\intbl\itap1\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+Command\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1960\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2900\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+Hardware Simulator\cell 
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+HardwareSimulator.sh
+\f0 \expnd0\expndtw0\kerning0
+\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1960\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2900\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+CPU Emulator\cell 
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+CPUEmulator.sh
+\f0 \expnd0\expndtw0\kerning0
+\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1960\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2900\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+Assembler\cell 
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+Assembler.sh
+\f0 \expnd0\expndtw0\kerning0
+\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1960\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2900\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+VM Emulator\cell 
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+VMEmulator.sh
+\f0 \expnd0\expndtw0\kerning0
+\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1960\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2900\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+Jack Compiler\cell 
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+JackCompiler.sh
+\f0 \expnd0\expndtw0\kerning0
+\cell \lastrow\row
+\pard\pardeftab720\sa240
+\cf0 \expnd0\expndtw0\kerning0
+To run any of these tools, open a Terminal window and type the following, replacing 
+\f1 \expnd0\expndtw0\kerning0
+COMMAND
+\f0 \expnd0\expndtw0\kerning0
+ with one of the commands listed above.\
+\pard\pardeftab720\sa240
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+~/Desktop/nand2tetris/tools/COMMAND
+\f0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sa280
+
+\b\fs28 \cf0 \expnd0\expndtw0\kerning0
+That's a lot to type. Can I shorten this?\
+\pard\pardeftab720\sa240
+
+\b0\fs24 \cf0 \expnd0\expndtw0\kerning0
+Indeed you can. Open a Terminal window and type (once and for all):\
+\pard\pardeftab720\sa240
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+echo "export PATH=$PATH:~/Desktop/nand2tetris/tools" >> ~/.bash_profile ; source ~/.bash_profile
+\f0 \expnd0\expndtw0\kerning0
+\
+You can now run any of the supplied 
+\i \expnd0\expndtw0\kerning0
+Nand2Tetris
+\i0 \expnd0\expndtw0\kerning0
+ software tools by typing just the command. For example:\
+
+\f1 \expnd0\expndtw0\kerning0
+HardwareSimulator.sh
+\f0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sa280
+
+\b\fs28 \cf0 \expnd0\expndtw0\kerning0
+I'm Working on Project 9. How Do I Compile My 
+\f2 \expnd0\expndtw0\kerning0
+.jack
+\f0 \expnd0\expndtw0\kerning0
+ Files?\
+\pard\pardeftab720\sa240
+
+\b0\fs24 \cf0 \expnd0\expndtw0\kerning0
+Unlike the simulators, which feature an interactive user interface, the Jack Compiler is a terminal-oriented application. In order to run it, you must supply the name of the file or folder that you wish to compile. For example, suppose you wish to compile all 
+\f1 \expnd0\expndtw0\kerning0
+.jack
+\f0 \expnd0\expndtw0\kerning0
+ files stored in the folder 
+\f1 \expnd0\expndtw0\kerning0
+projects/09/Square
+\f0 \expnd0\expndtw0\kerning0
+ (that's a folder called 
+\f1 \expnd0\expndtw0\kerning0
+Square
+\f0 \expnd0\expndtw0\kerning0
+, located in the 
+\f1 \expnd0\expndtw0\kerning0
+09
+\f0 \expnd0\expndtw0\kerning0
+ folder, which is located in the
+\f1 \expnd0\expndtw0\kerning0
+projects
+\f0 \expnd0\expndtw0\kerning0
+ folder). To do so, open a Terminal window and type:\
+\pard\pardeftab720\sa240
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+JackCompiler.sh ~/Desktop/nand2tetris/projects/09/Square
+\f0 \expnd0\expndtw0\kerning0
+\
+This results in either a successful compilation of the 
+\f1 \expnd0\expndtw0\kerning0
+.jack
+\f0 \expnd0\expndtw0\kerning0
+ files in 
+\f1 \expnd0\expndtw0\kerning0
+Square
+\f0 \expnd0\expndtw0\kerning0
+, or some compilation errors.\
+\pard\pardeftab720\sa280
+
+\b\fs28 \cf0 \expnd0\expndtw0\kerning0
+Why Am I Seeing a "Command Not Found" Message?\
+\pard\pardeftab720\sa240
+
+\b0\fs24 \cf0 \expnd0\expndtw0\kerning0
+The likely reason is that your folder location is not on the Mac OS X desktop, which is assumed by the instructions above. Replace 
+\f1 \expnd0\expndtw0\kerning0
+Desktop
+\f0 \expnd0\expndtw0\kerning0
+ above with the correct path to your
+\f1 \expnd0\expndtw0\kerning0
+nand2tetris/tools
+\f0 \expnd0\expndtw0\kerning0
+ folder, or move your 
+\f1 \expnd0\expndtw0\kerning0
+nand2tetris
+\f0 \expnd0\expndtw0\kerning0
+ folder to your desktop.\
+}
