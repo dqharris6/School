@@ -1,0 +1,52 @@
+\documentclass[12pt]{report}
+\usepackage{amsmath,amsthm,latexsym,paralist}
+\usepackage[document]{ragged2e}
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+
+\begin{document}
+
+\vspace*{-15mm}
+\begin{center}
+{\large
+				CSCE 221 - Homework Set 5 \\
+				Due 3/1/2015, 11:59 PM}
+\end{center}
+
+\begin{problem} 	R-8.3 (10 points) 		
+\end{problem}
+				\begin{compactenum}[1.]
+				\item $>$ is implemented by $!(<)$. \\
+				\item $<=$ is implemented by $(<) || (< \&\&!(<))$. \\
+				\item $>=$ is implemented by $(!(<)) || (<\&\&!(<))$. \\
+				\item $==$ is implemented by $(<\&\& !(<)) \&\& (< \&\& !(<))$. \\
+				\item $!=$ is implemented by $!(< \&\& !(<))$. \\
+				\end{compactenum}
+
+\begin{problem} 	R-8.6 (10 points) 		
+\end{problem}
+				Drawn on attached problems.
+
+\begin{problem} 	R-8.7 (10 points) 		
+\end{problem}
+				To perform all of these operations, we will use a heap (node with 2 terms). The event will be 				defined as a pair of (timestamp, event). To insert a new event, do so using heap order 					property; the process of having a node thats value is always greater than its parents. To get 				this in order, the heap will simply swap 2 elements if they violate this order. Finally, in order to 				extract the event with the smallest time stamp, we remove it the same way in which we 					remove the minimum value from a heap.
+
+\begin{problem} 	R-8.16 10 points) 		
+\end{problem}
+				This scenario is not considered, because such a heap cannot exist. In heaps, the values are 				inserted level-wise, and then the heaps are balanced. Therefore, the left side of the parent 				node is filled before the right side, so there cannot exist a heap wherein the right child of the 				root is an internal node and the left child is an external node.
+				
+\begin{problem} 	R-8.21 (15 points) 		
+\end{problem}
+				Drawn on attached problems. 
+
+\begin{problem} 	Given the following sequence of numbers (left to right... left comes first), build and draw the 				structure of the resulting heap (using the default less than comparison operation) \\
+				13, 18, 27, 19, 9, 7, 40, 21, 3, 5 (20 points) 		
+\end{problem}
+				Drawn on attached problems.
+
+\begin{problem} 	C-8.17 (5 points) 		
+\end{problem}
+				Do bottom-up heap construction, which takes O(n) time. Then, call removeMinElement() k 				times, which takes O(k log n) time.
+\goodbreak
+\end{document}

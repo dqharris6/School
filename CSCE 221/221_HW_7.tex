@@ -1,0 +1,94 @@
+\documentclass[12pt]{report}
+\usepackage{amsmath,amsthm,latexsym,paralist}
+\usepackage[document]{ragged2e}
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+
+\begin{document}
+
+\vspace*{-15mm}
+\begin{center}
+{\large
+				CSCE 221 - Homework Set 7 \\
+				Due 4/5/2015, 11:59 PM}
+\end{center}
+
+\begin{problem} 	R-11.1 (10 points) 		
+\end{problem}
+				General Comparable Objects: Insertion sort and selection sort. \smallskip 	\newline
+				Long Character Strings: Radix sort and bucket sort. \smallskip \newline
+				Floating Point Numbers: Quick sort. \smallskip \newline
+				32-bit Integers: Merge sort. \smallskip \newline
+				Bytes: Radix sort.
+
+\begin{problem} 	R-11.3 (10 points) 		
+\end{problem}
+				\noindent If each bucket is given a constant number of elements, it takes $O(1)$ time to sort 				them. So, to sort $n$ bits of $n$ 0's and 1's it will take $O(n)$ time. However, to make this 				stable, we can go at it with a radix sort. If $n$ inputs have $k$ digits, the stable bucket 					sorting algorithm will run in $O(kn)$ time.
+				
+\begin{problem} 	R-11.5 (10 points) 		
+\end{problem}
+				Downward Arrow: This represents the recursive call of the merge sort algorithm. The 					subsequences break from top to bottom and so does the merge sort recursion. \smallskip 						\newline
+				Upward Arrow: This is used to represent that the input required for the next stage is complete 				at the bottom level. The nodes with the dashed lines show the calls that have not yet been 				made. The nodes with thick lines represent the completed calls. The remaining nodes drawn 				with thin lines show to calls that are waiting for a child invocation to return.
+
+\begin{problem} 	R-11.6 (10 points) 		
+\end{problem}
+				We start with an array sorted as A[p(= 1) ... r(= n)]. \\
+				If there is no value in the array, or only one element, then return. \\
+				Split the array into two smaller arrays, making A[p ... q] and A[q+1 ... r]. \\
+				Recursively sort the two sub arrays. \\
+				Merge the two sub arrays, to accomplish one single, sorted array.
+
+\begin{problem} 	R-11.10 (10 points) 		
+\end{problem}
+				If the input array is already sorted and the pivot at index $\lfloor n/2 \rfloor$ is chosen, then 				the running time will be $O(n$ $log$ $n)$.
+
+\begin{problem} 	R-11.11 (10 points) 		
+\end{problem}
+				In the worst case, the running time of quick sort is $\Omega(n^2)$. If we choose this given 				break point, it will divide it into two halves; one with more inputs and the other with less or 				none. \smallskip \newline
+				The input that would cause such a partition to run in this running time would be:
+				1, 3, 5, 7, 9, 2, 4, 6, 8 .
+
+\begin{problem} 	R-11.13 (10 points) 		
+\end{problem}
+				Function divide (array, leftmost element, rightmost element, pivot element) \\
+				Input: Sequence of values to be sorted \\
+				Output: In place quicksort values \\
+				pivot key := array[pivot index] \\
+				swap array[pivot index] and array[rightmost element] \\
+				save index := leftmost element \\
+				for index from leftmost element to rightmost element - 1 \\
+				if array[index] <= pivot key \\
+				swap array[index] and array[store index] \\
+				save index := save index + 1 \\
+				swap array[save index] and array[right] \\
+				return save index  
+
+\begin{problem} 	R-11.18 (10 points) 		
+\end{problem}
+				An algorithm is said to be a stable one if in the input there are two records with the same 					values, say S and R, with the same key. Then, if R comes before S in the input listing, then 				after sorting also R should come before S. Since this is the case with the duplicate input 9's, 				is is proven that merge sort is stable.
+
+\begin{problem} 	R-11.21 (10 points) 		
+\end{problem}
+				Any sorting algorithm is considered to be in place if it uses a constant amount of memory 					space for the objects to be stored. In the bucket sorting algorithm, the size and number of 				buckets will increase as the size of the numbers to be sorted will increase. Therefore, the 					bucket sorting algorithm is not in place.
+
+\begin{problem} 	R-11.22 (10 points) 		
+\end{problem}
+				We are asked to provide a sequence in which heap and merge sorts will take $O(n$ $log$ $n)$ time, and $O(n)$ for insertion sort. The sequence that fulfills this criteria is: 6, 1, 4, 9, 0, 3, 5, 7, 2, 8 . \smallskip \newline If we reverse this, merge sort would run $O(n^2)$, insertion sort would be $O(n^2)$, heap sort would run $O(n$ $log$ $n)$.
+
+\begin{problem} 	C-11.9 (20 points) 		
+\end{problem}
+				Algorithm inplacequicksort(sequence s, beginning number a, ending number b) \\
+				Input: array sequence s with distinct elements and array size \\
+				Output :sorted sequence s in non-decreasing order from a to b \\
+				If array has no values, return \\
+				If array has no values then terminate. Otherwise choose the pivot element and traverse the array in right side and left side as necessary \\
+				Choose the pivot element \\
+				Traverse array in right and left side \\
+				Start from traversing on the right side and search values greater and smaller than pivot \\
+				Arrange the values according to the pivot element in the sorted sequence \\
+				If there's a duplicate, decrease the right index of the array by one and call the recursive functions: \\ 
+				inplacequicksort(s, a, l-1) and inplacequicksort(s, l+1, b) \\	
+						
+\goodbreak
+\end{document}

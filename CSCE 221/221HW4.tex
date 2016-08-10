@@ -1,0 +1,99 @@
+\documentclass[12pt]{report}
+\usepackage{amsmath,amsthm,latexsym,paralist}
+\usepackage[document]{ragged2e}
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+
+\begin{document}
+
+\vspace*{-15mm}
+\begin{center}
+{\large
+				CSCE 221 - Homework Set 4 \\
+				Due 2/22/2015, 11:59 PM}
+\end{center}
+
+\begin{problem} 	R-7.2 (5 points) 		
+\end{problem}
+				a) root: /user/rt/courses \\
+				b) 6 internal nodes: cs016/, cs252/, homeworks/, programs/, projects/, papers/, demos/. \\
+				c) 6 descendants: h1, h2, h3, pr1, pr2, pr3. \\
+				d) 1 ancestor: user/rt/courses. \\
+				e) 1 sibling: programs/ \\
+				f) projects/, papers/, demos/, buylow, sellhigh, market. \\
+				g) depth of papers: 3. \\
+				h) height of tree: 4.
+				
+\begin{problem} 	R-7.6 (5 points) 		
+\end{problem}
+				Drawn on attached page.
+				
+\begin{problem} 	R-7.7 (5 points) 		
+\end{problem}
+				We need to show that the height of a given tree equals the maximum depth of any external 				node contained within it. To do this, we first check that the given root node is the external 					node. If yes then return 0. If no, set the height equal to 0. From here, we go into a for() loop 				that counts the height. After calculating this, we increase the value of the height by one and 				return it. After this, it can be said that the height of a given tree equals the max depth of any 				external node contained within it.
+
+\begin{problem} 	R-7.11 (5 points) 		
+\end{problem}
+				Drawn on attached page.
+
+\begin{problem} 	R-7.12 (10 points) 		
+\end{problem}
+				In preorder traversal, the root is visited first, then the left and right children are traversed. In 				post order traversal, the left and right children are reversed first before the root of the tree. 				Thus, it can be said that the result of preorder and post order traversal of tree T will never be 				the same. If anything, when the nodes of the tree have just 0 or 1 child, then pre and post 				order will be the opposite of one another. Drawn examples to follow. 
+					
+\begin{problem} 	R-7.18 (5 points) 		
+\end{problem}
+				The modified function will print the value of the nodes such that the value of one node is 					displayed in one line. Code as follows: \\
+				
+				void preorderPrint(const Tree$\&$ T, const Position$\&$ p) \\
+				$\{$ \\
+					cout $<<$ *p;  // prints the value of the node and goes to the next line. \\
+					PositionList ch = p.children();  // creates object and assigns children. \\
+					for(iterator q = ch.begin(); q != ch.end(); ++q)  // display the node. \\
+					$\{$ \\
+					cout $<<$ endl;  // add a new line. \\
+					preorderPrint(T, *q);  // calls the function recursively. \\
+					$\}$ \\
+				$\}$ 
+
+\begin{problem} 	R-7.22 (10 points) 		
+\end{problem}
+				traverse(node *root) // defines function, passes address of root node. \\
+				int leftCount = 0, rightCount = 0, total; // declares variables to count children, initializes them 					as 0. \\
+				if(root-$>$lChild) $\{$ leftCount++; traverse(root-$>$left); $\}$ // calculate the value of the left 					node, and recursively call the method by passing child as root element. \\
+				if(root-$>$rChild) $\{$ rightCount++; traverse(root-$>$right); $\}$ // do the same with the right 					node. \\
+				total = leftCount + rightCount; return total; // calculate and return the total value.
+
+\begin{problem} 	R-7.25 (5 points) 		
+\end{problem}
+				Drawn on attached page.
+				
+\begin{problem} 	C-7.7 (10 points) 		
+\end{problem}
+				Input: a parentheses string. \\
+				Output: The constructed tree of that parentheses string. \\
+				createTreeOfString( string Tree $\&$ Tree1, const Position$\&$ pos) \\
+				$\{$ \\
+				cout $<<$ "("; \\
+				if(!pos.isExternal()) \\
+				$\{$ \\
+				PositionList posList = pos.children(); \\
+				cout $<<$ "("; \\
+				for(iterator it = posList.begin(); it != poslist.end(); it++) \\
+				$\{$ \\
+				cout $<<$" "; \\
+				$\}$ \\
+				create TreeOFString(Tree1, *it); \\
+				$\}$ \\ cout $<<$ ")"; \\
+				$\}$ \\
+				$\}$ \\
+				
+\goodbreak
+\end{document}
+
+
+
+
+
+
+

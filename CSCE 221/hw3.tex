@@ -1,0 +1,183 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm,latexsym,paralist}
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem*{solution}{Solution}
+\newtheorem*{resources}{Resources}
+
+\newcommand{\nix}[1]{}  % to comment out a group of lines
+
+\newcommand{\name}[2]{\noindent\textbf{Name: #1}\hfill \textbf{Section: #2}}
+\newcommand{\honor}{\noindent On my honor, as an Aggie, I have neither
+  given nor received any unauthorized aid on any portion of the
+  academic work included in this assignment. Furthermore, I have
+  disclosed all resources (people, books, web sites, etc.) that have
+  been used to prepare this homework. \\[2ex]
+ \textbf{Signature:} \underline{\hspace*{8cm}} }
+
+ 
+\newcommand{\checklist}{\noindent\textbf{Checklist:}
+\begin{compactitem}[$\Box$] 
+\item Did you add your name? 
+\item Did you disclose all resources that you have used? \\
+(This includes all people, books, websites, etc. that you have consulted)
+\item Did you sign that you followed the Aggie honor code? 
+\item Did you solve all problems? 
+\item Did you submit the pdf file of your homework on eCampus?
+\item Did you submit a signed hardcopy of the pdf file in class? 
+\end{compactitem}
+}
+
+\newcommand{\problemset}[1]{\begin{center}\textbf{Problem Set #1}\end{center}}
+\newcommand{\duedate}[2]{\begin{quote}\textbf{Due dates:} Electronic
+    submission of \textbf{hw3.pdf} file of this homework is due on
+    \textbf{#1} on \texttt{http://ecampus.tamu.edu}. Note that you submit 
+    only the pdf file. Please do not archive or compress the file.  
+    A signed paper copy of the pdf file is due on
+    \textbf{#2} at the beginning of class.
+    \textbf{If you do not turn in a signed hardcopy, your work will not be graded.}\end{quote} } 
+    
+\newcommand{\N}{\mathbf{N}}
+\newcommand{\R}{\mathbf{R}}
+\newcommand{\Z}{\mathbf{Z}}
+
+
+\begin{document}
+\vspace*{-15mm}
+\begin{center}
+{\large
+CSCE 222 [501, 502] Discrete Structures for Computing\\[.5ex]
+Spring 2015 -- Hyunyoung Lee\\}
+\end{center}
+\problemset{3}
+\duedate{Monday, 2/16/2015 before 23:59}{Tuesday, 2/17/2015}
+\name{Dalton Q. Harris}{502}
+\begin{resources} Parker Ransleben, Harrison Froeschke, math.utah.edu, math.berkeley.edu.
+\end{resources}
+\honor
+\bigskip
+\begin{problem} (10 points)
+Section 1.5, Exercise 4 a), b), c), d) and e), page 64
+\end{problem}
+\begin{solution}	
+\end{solution}		\noindent a) There is a student in my class who has taken a computer science class. \\
+				b) There is a student in my class who has taken every computer science class. \\
+				c) Every student in my class has taken a computer science class. \\
+				d) There is a computer science class that everyone in my class has taken. \\
+				e) For every computer science class, there is a student from my class who has taken it.
+
+\begin{problem} (10 points)
+Section 1.6, Exercise 8, page 78
+\end{problem}
+\begin{solution}
+\end{solution}		\noindent Definition of Modus Tollens. This states that if $\neg p$, and $p\rightarrow q$, 					then $\neg q$.
+
+\begin{problem} (10 points)
+Section 1.6, Exercise 14 (a) and (b), page 79
+\end{problem}
+\begin{solution}
+\end{solution}		a) 	\begin{tabular}{| l | l | l |} \hline
+					1. & $S(Linda) \wedge R(Linda)$, $\forall x(Rx \rightarrow Tx)$	& Given \\
+					2. & $R(Linda) \rightarrow T(Linda)$ 						& Elimination \\
+					3. & $R(Linda) $									& Simplification \\
+					4. & $T(Linda)$										& Modus Ponens \\
+					5. & $S(Linda)$										& Simplification \\
+					6. & $S(Linda \wedge T(Linda)$						& Conjunction \\
+					7. & $\exists x(Sx \wedge Tx)$						& $\exists$-Introduction \\
+					\hline
+					\end{tabular}
+				
+				b) 	\begin{tabular}{| l | l | l |} \hline
+					1. & $\forall xD(x)$, $\forall x(D(x) \rightarrow A(x))$		& Given \\
+					2. & $D(c)$ for arbitrary roommate $c$ 				& Universal Instantiation \\
+					3. & $D(c) \rightarrow A(c) $						& Universal Instantiation \\
+					4. & $A(c)$									& Modus Ponens \\
+					5. & $\forall xA(x)$, since $c$ was arbitrary			& Universal Generalization \\
+					\hline
+					\end{tabular}
+
+\begin{problem} (10 points)
+Section 1.6, Exercise 20, page 80
+\end{problem}
+\begin{solution}
+\end{solution}		\noindent a) FALSE, using proof by contradiction whereas a = -2. \\
+				b) TRUE, using modus ponens.
+
+\begin{problem} (10 points)
+Section 1.7, Exercise 18, page 91.
+\end{problem}
+\begin{solution}
+\end{solution}		\noindent a) Let $n$ be an arbitrary integer. We can assume that $n$ is odd, and $n = 2k					+1$ for some integer $k$. We need to show that $3n+2$ is odd. Since $n = 2k, 3n+2 = 3(2k				+1)+2 = 6k+5 = 2(3k+2)+1$, where $3k+2 \in\Z$ since $k \in \Z. $So, $3n+2$ is odd. \\ 
+
+				\noindent b) Let $n$ be an arbitrary integer. We can assume that $3n + 2$ is 							even and $n$ is odd. Then $n = 2k + 1$ for some integer $k$, and so $3n + 2 = 3(2k + 1) + 				2 = 6k + 5 = 2(3k + 2) + 1$, where $3k + 2 \in Z$ since $k \in Z$. So $3n + 2$ is odd. So 3n 				+ 2 is odd and even. This constitutes a contradiction!
+
+\begin{problem} (10 points)
+Let $n>1$ be an integer. \textsl{Prove by contradiction} that if $n$ is a perfect square, then
+$n+3$ cannot be a perfect square. 
+\end{problem}
+\begin{solution}
+\end{solution}		\noindent First, we will assume that both $n$ and $n+3$ are perfect squares. This means 					that there exists integers $a,b$ such that $n = a^2$ and $n+3 = b^2$. Then $3 = (n+3) - n = 				b^2 - a^2 = (b-a)(b+a)$. This means that $b+a = 3$ and $b-a = 1$. Therefore, $a = b-1$, 					and $2b = 4$, so $b = 1/2$. This is contradictory, because $b$ is not an integer.
+
+\begin{problem} (10 points)
+Prove by induction that
+$$\sum_{i=0}^n 3^i = \frac{3^{n+1}-1}{2}$$
+holds for every non-negative integer $n$.
+\end{problem}
+\begin{solution}
+\end{solution}		\noindent First, we need to set up the base case. We will do so using $i = 1$. $3^1 = 3$, 					and $\frac{3^2 - 1}{2} = 4$. Since we are using the summation, we need to add $3^0$, 					which is $1$, so now the 2 sides of the equation match up. \\
+				Next, the induction step. Since we assume this equation holds for all values $n$, it must 					also hold for all values $n+1$. In other words, it must also hold for $\frac{3^{(n+1)+1}-1}{2}$.				\\
+
+\textsl{The following three problems replace the last two problems on complexity in the 
+previous version of this homework.}
+
+\begin{problem} (10 points)
+Section 1.7, Exercise 22, page 91.  Prove by contradiction.
+\end{problem}
+\begin{solution}
+\end{solution}		\noindent Suppose that we don't draw a pair of blue or black socks. The only way this could 				happen is that we have drawn at most one of each color, but this only accounts for two 					socks. The question stated that we are drawing three socks. Therefore, our assumption that 				we did not get a pair of blue or a pair of black socks is incorrect.
+
+\begin{problem} (10 points)
+Section 1.7, Exercise 24, page 91.  Prove by contradiction.
+\end{problem}
+\begin{solution}
+\end{solution}		\noindent Suppose that we managed to choose 25 days such that 2 or fewer days fall in any 				one month. This implies that 25 is less than 24, since the greatest number of days chosen 				with 2 or fewer days in any month is 12 x 2 = 24. This is a contradiction, because 25 is, in 					fact, greater than 24. 
+
+\begin{problem} (10 points)
+Section 1.7, Exercise 26, page 91.  Use direct proof (partially involving proof by contraposition).
+\end{problem}
+\begin{solution}
+\end{solution}		\noindent Let n be a positive integer, assumed to be even. By definition, this means that 					there exists an integer a such that n = 2a. By substitution, 7n+4 = 7(2a)+4 $\rightarrow$ 					2(7a+2). Since all of its components are integers, (7a+2) must be an integer, too. Again, by 				definition, 7n+4 is even. \\
+				Now, we assume that n is off. By definition, this means that there is an integer b such that n 				= 2b+1. By substitution, 7n+4 = 7(2b+1)+4 $\rightarrow$ 2(7b+5)+1. Since its components 				are integers, we assume that (7b+5) is an integer. Therefore, by definition of odd, it follows 				that 7n+4 is odd. Since n is odd implies that (7n+4) is also odd, then clearly 7n+4 is even 					implies n is even must be true, as well. \\
+				Furthermore, since n is even implies 7n+4 is even, and also 7n+4 is even implies n is even 				are true, then by definition it follows that the original n is even if and only if 7n+4 is even 					must also be true. 
+
+
+% The following two problems are moved to the next homework, Homework 4
+\nix{
+\begin{problem}  (10 points)
+Let $f_1, f_2, f_3, f_4$ be functions from the set $\N$ of natural numbers
+to the set $\R$ of real numbers. Suppose that $f_1= O(f_2)$ and
+$f_3=O(f_4)$. Use the definition of Big Oh \textit{given in class} to prove that 
+$$f_1(n) + f_3(n) = O(\max(f_2(n),  f_4(n))).$$
+\end{problem}
+\begin{solution}
+\end{solution}
+
+\begin{problem} (4 pts $\times$ 5 = 20 points) Determine which of the following
+  statements are correct:
+\begin{compactenum}[(a)]
+\item $ 2n^2-n = O(n^2)$
+\item $ n^2 = O(n\log n)$
+\item $ n^2 = O(n^3)$
+\item $ n = \Omega(n^2)$
+\item $ 1= \Omega(1/n)$
+\end{compactenum}
+In each case, answer correct or incorrect, and justify your answer. 
+\end{problem}
+\begin{solution}
+\end{solution}
+}% end of nix
+
+\goodbreak
+\checklist
+\end{document}
