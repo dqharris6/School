@@ -1,0 +1,95 @@
+(Print this page as a cover sheet for your printouts) 
+HOMEWORK 2 
+Section: ______________ 
+Due: 11:59 P.M. Sunday, September 21, 2014
+
+"On my honor, as an Aggie, I have neither given nor received any
+unauthorized aid on any portion of the academic work included in this
+assignment."
+
+
+________________________________	________________________________
+Typed or printed name of student	Signature of student
+
+NOTE:  Please follow your lab instructor's directions for submitting
+your assignment through CSNET.  (Use VPN if you are off campus.)  ONLY 
+ASSIGNMENTS SUBMITTED TO CSNET WILL BE GRADED!  Make a printout of each source 
+file and staple it behind this cover sheet, unless your lab instructor directs 
+otherwise.  Sign it and give it to your TA in lab or put it in your TA's 
+mailbox in the corner of the 3rd floor of HRBB, near room 312.  IF YOU DO NOT 
+TURN IN A SIGNED COVER SHEET YOUR WORK WILL NOT BE GRADED!
+
+NOTE:  Homework will be graded on build.cse.tamu.edu using g++ version 4.9.
+You are free to develop your programs on Visual C++ or any other platform, 
+but it is your responsibility to make sure your programs also compile and
+execute correctly on build.cse.tamu.edu using g++ version 4.9.
+
+NOTE:  Each file submitted (hw2pr1.cpp, etc.--see below) must begin as follows:
+//Your Name
+//Course and section number
+//Due: September 21, 2014 (or whatever the due date is)
+//hw2pr1.cpp (or whatever this file name is)
+
+The grade for this lab will be based on style (formatting, variable
+names, comments, etc.), syntax (no compilation or link errors), and
+correctness (passes all test cases).  Your grade for this lab is:
+
+Problem #       1       2       3       4 
+Style           /2      /4      /4      /2 
+Syntax          /3      /6      /6      /3 
+Correctness     /5      /10     /10     /5
+-------------------------------------------------------------------
+Total           /10     /20     /20     /10
+
+Grand total _____/50
+
+1. (10 points)  Wednesday, September 17th, is Constitution Day in the U.S.  
+Look up the Bill of Rights (first ten amendments to the U.S. Constitution) and
+write a program to ask the user for a number (1 to 10) and print out a 
+brief description of that amendment.  A sample run should look like this:
+
+Which amendment? 1
+Amendment 1 guarantees freedom of religion, speech, press, assembly, and
+petition.
+
+Which amendment? 77
+That is not a valid input.  Please enter a number between 1 and 10.
+
+Which amendment? 7
+Amendment 7 guarantees trial by jury.
+
+Do not use vectors in this program. Name your program hw2pr1.cpp.
+
+2. (20 points)  Rewrite problem 1 to use a vector to store the answers, so
+that answers[i] contains the answer for the ith amendment.  Name your program 
+hw2pr2.cpp. vector <string> nameofstring;
+
+3. (20 points)  One financial planner recommends dividing your income into the 
+following budget categories:
+	give away 10% (e.g., to some cause you are committed to, or to help
+		others)
+	save 10% (e.g., for unexpected expenses or planned large purchases)
+	live on 80%
+
+Write a program named hw2pr3.cpp which repeatedly asks for an income amount in
+dollars and prints out the budget amounts in dollars and cents.  A sample run 
+should look like this:
+
+Income in dollars? 1000
+You should give away $100.00, save $100.00, and live on $800.00.
+
+Income in dollars? 2014
+You should give away $201.40, save $201.40, and live on $1611.20.
+
+Hint:  Look up setprecision, so your program doesn't print $201.4.
+
+OPTIONAL EXTRA CREDIT 
+=====================
+4. (10 points)  Rewrite hw1pr3 to use two vectors, one for the denominations
+in pence and one for the quantities read in.  For example,
+     vector<int> denomination{1,2,...,500};
+
+Hint: Use an if statement so that if the denomination is 100 pence or more the
+program asks how many xxx-pound coins you have (divide pence by 100).
+
+Name your program hw2pr4.cpp.

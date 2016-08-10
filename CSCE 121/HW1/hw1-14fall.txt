@@ -1,0 +1,148 @@
+(Print this page as a cover sheet for your printouts) 
+HOMEWORK 1 
+Section: ______________ 
+Due: 11:59 P.M. Sunday, September 14, 2014
+
+"On my honor, as an Aggie, I have neither given nor received any
+unauthorized aid on any portion of the academic work included in this
+assignment."
+
+
+________________________________	________________________________
+Typed or printed name of student	Signature of student
+
+NOTE:  Please follow your lab instructor's directions for submitting
+your assignment through CSNET.  ONLY ASSIGNMENTS SUBMITTED TO CSNET WILL
+BE GRADED!  Make a printout of each source file and staple it behind
+this cover sheet, unless your lab instructor directs otherwise.  Sign it
+and give it to your TA in lab or put it in your TA's mailbox in the
+corner of the 3rd floor of HRBB, near room 312.  IF YOU DO NOT TURN IN A
+SIGNED COVER SHEET YOUR WORK WILL NOT BE GRADED!
+
+NOTE:  Homework will be graded on build.cse.tamu.edu using g++ version 4.9.
+You are free to develop your programs on Visual C++ or any other platform, 
+but it is your responsibility to make sure your programs also compile and
+execute correctly on build.cse.tamu.edu using g++ version 4.9.
+
+NOTE:  Each file submitted (hw1pr1.cpp, etc.--see below) must begin as follows:
+//Your Name
+//Course and section number
+//Due: September 14, 2014 (or whatever the due date is)
+//hw1pr1.cpp (or whatever this file name is)
+
+The grade for this lab will be based on style (formatting, variable
+names, comments, etc.), syntax (no compilation or link errors), and
+correctness (passes all test cases).  Your grade for this lab is:
+
+Problem #       1       2       3       4 
+Style           /2      /4      /4      /2 
+Syntax          /3      /6      /6      /3 
+Correctness     /5      /10     /10     /5
+-------------------------------------------------------------------
+Total           /10     /20     /20     /10
+
+Grand total _____/50
+
+
+1. (10 points)  There is no Nobel Prize in computer science, but there is the
+Turing Award by the Association for Computing Machinery.  Posters of all the
+Turing Award winners are in the halls of the buildings used by the Department
+of Computer Science and Engineering, namely, the 2nd, 3rd, 4th, 5th floors of 
+HRBB, the 2nd and 3rd floors of Teague, and Reed McDonald.  Visit these 
+locations and write down 15 Turing Award winners' first and last names, then
+make a completed crossword puzzle on paper by interlocking the first names.  
+List the last names as the clues.  For example, here is a small crossword puzzle
+using Frederick Brooks and Donald Knuth:
+
+DOWN 2.  Knuth
+
+ACROSS 1.  Brooks
+
+1     2
+ F R E D E R I C K
+
+       O
+
+       N
+
+       A
+
+       L
+
+       D
+
+Now write a C++ program named hw1pr1.cpp which prints the clues and the puzzle 
+using lots of cout statements.  Do not turn in the completed crossword puzzle; 
+running your program will display it on the screen like the example above,
+except yours will have 15 names.
+
+Hint:  Use 1/4-inch graph paper to lay out your completed crossword puzzle.  You
+can print your own at http://www.printfreegraphpaper.com.
+
+2. (20 points)  Exercise 10 on page 86, but with the following modification: 
+instead of writing the operator followed by two operands, put the operator last.
+
+For example,
+
+100 3.14 +
+4 5 *
+4 5 div
+
+(This is called "reverse Polish notation" in honor of the Polish mathematician
+Jan Lukasiewicz.  Even for more complicated expressions than this program, it
+does not need parentheses, and is used by HP calculators.)
+
+Name your program hw1pr2.cpp.
+
+3. (20 points) Exercise 11 on page 86, but with the following
+modifications: instead of using U.S. currency, write your program for British
+coins. Note that British coins come in different denominations from U.S.
+coins (although some are commemorative denominations not in everyday use): 
+1-penny
+2-penny (or "tuppence")
+5-penny
+10-penny
+20-penny
+25-penny
+50-penny
+1-pound
+2-pound
+5-pound
+Report to the user the individual counts (as in the original problem) and the 
+sum in pence (British English for "pennies").  A pound is 100 pence (since
+decimalization in 1971; before that a pound was 240 "old" pence).  In addition, 
+convert the final value to U.S. dollars using a recent exchange rate (do not 
+worry about rounding the result, for now).
+
+Your program's output should look something like:
+
+You have 3 1-penny coins.
+You have 8 2-penny coins.
+... <etc.> ...
+
+The value of all of your coins is 19 British pence.
+In U.S. Dollars, that is $.3092.
+
+Name your program hw1pr3.cpp.
+
+OPTIONAL EXTRA CREDIT 
+=====================
+4. (10 points)  Write a C++ program which prints 11 lines of this table:
+
+square root of (1 squared) is 1.00000
+square root of (10 squared) is 10.0000
+square root of (100 squared) is 100.000
+...
+
+by using exactly this code and adding to it:
+
+int x = 1;
+int x2 = x * x;
+double y = sqrt(x2);
+//cout goes here
+x *= 10;
+
+with some sort of counter (while loop or for statement).  The program should
+produce some strange values (why?), so after printing the table also print
+"This program produced some strange values since..." (fill in your reason).  
+Name your program hw1pr4.cpp.
